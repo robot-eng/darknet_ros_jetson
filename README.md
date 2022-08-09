@@ -2,7 +2,7 @@
 # Darknet use CUDNN , GPU
 1.fix Makefile
 ```
-nano ~/dec/src/darknet_ros/darknet/Makefile
+nano ~/darknet_ros_jetson/src/darknet_ros/darknet/Makefile
 ```
 ```
 GPU=1
@@ -123,14 +123,14 @@ export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:/usr/local/cuda-10.2/extras/CU
 ```
 2.Make
 ```
-cd ~/dec/src/darknet_ros/darknet
+cd ~/darknet_ros_jetson/src/darknet_ros/darknet
 ```
 ```
 make
 ```
 2.1 if error
 ```
-nano ~/dec/src/darknet_ros/darknet/src/convolutional_layer.c
+nano ~/darknet_ros_jetson/src/darknet_ros/darknet/src/convolutional_layer.c
 ```
 ```
 #include "convolutional_layer.h"
@@ -961,7 +961,7 @@ image *visualize_convolutional_layer(convolutional_layer l, char *window, image 
 }
 ```
 ```
-nano ~/dec/src/darknet_ros/darknet/src/image_opencv.cpp
+nano ~/darknet_ros_jetson/src/darknet_ros/darknet/src/image_opencv.cpp
 ```
 ```
 #ifdef OPENCV
@@ -1104,7 +1104,7 @@ nano ~/.bashrc
 export OpenCV_DIR=/usr/include/opencv4
 ```
 ```
-nano ~/dec/src/darknet_ros/darknet_ros/CMakeLists.txt
+nano ~/darknet_ros_jetson/src/darknet_ros/darknet_ros/CMakeLists.txt
 ```
 ```
 cmake_minimum_required(VERSION 3.5.1)
@@ -1392,6 +1392,6 @@ endif (cmake_clang_tools_FOUND)
 ```
 ```
 $ cd
-$ cd de
+$ cd darknet_ros_jetson
 $ catkin_make
 ```
