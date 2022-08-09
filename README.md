@@ -1395,4 +1395,4 @@ $ cd
 $ cd darknet_ros_jetson
 $ catkin_make
 ```
-Apply : https://github.com/robot-eng/OAK-D
+#Apply : https://github.com/robot-eng/OAK-D
