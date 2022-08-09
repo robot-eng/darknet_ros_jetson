@@ -2,6 +2,9 @@
 # Darknet use CUDNN , GPU
 1.fix Makefile
 ```
+nano ~/dec/src/darknet_ros/darknet/Makefile
+```
+```
 GPU=1
 CUDNN=1
 OPENCV=1
